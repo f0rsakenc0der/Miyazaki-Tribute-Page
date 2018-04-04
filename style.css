@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Zilla+Slab+Highlight:700');
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Zilla Slab Highlight', cursive; */
+
+/* Gobal */
+:root{
+  --high_font: 'Zilla Slab Highlight', sans-serif;
+  --trans_color: rgba(245, 245, 245, 0.466);
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: teal;
+}
+body{
+  padding: none;
+  margin: none;
+  font-family: 'Raleway', sans-serif;
+  background: url("https://res.cloudinary.com/f0rsakenc0der/image/upload/v1522693658/ghibli.jpg");
+  background-size: 300px 280px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: left; 
+}
+
+.container {
+  display: flex; 
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(248, 243, 234, 0.952);
+}
+
+/* Header */
+
+header .container h1 {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: -10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: var(--trans_color);
+}
+
+header .container h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3em;
+  font-family: var(--high_font);
+  margin-bottom: -10px;
+  background-color: whitesmoke;
+}
+
+.container figure{
+  width: 80%;
+}
+
+figure img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border: solid black 2px;
+    border-radius: 1%;
+    margin-bottom: 10px;
+}
+
+figure figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 60px;
+  background-color: var(--trans_color);
+}
+
+main .container h3 {
+  text-align: center;
+  font-size: 3em;
+  font-family: var(--high_font);
+  background-color: whitesmoke;
+  margin-bottom: -10px;
+}
+
+main .container p{
+  width: 85%;
+  font-size: 2em;
+  text-align: justify;
+  margin-bottom: 60px;
+  background-color: var(--trans_color);
+}
+
+main .container ul{
+  width: 85%;
+  font-size: 2em;
+  background-color: var(--trans_color);
+}
+
+.container blockquote {
+  font-size: 2em;
+  font-style: italic;
+  width: 85%;
+  background-color: var(--trans_color);
+}
+
+.container blockquote footer{
+  font-size: 25px;
+  background-color: var(--trans_color);
+}
+
+@media (max-width: 991px) {
+  header .container h1 {
+    font-size: 3em;
+  }
+  header .container h2 {
+    font-size: 2em;
+  }
+  figure figcaption {
+    font-size: 1em;
+  }
+  main .container h3 {
+    font-size: 2em;
+  }
+  main .container p {
+    font-size: 1em;
+  }
+  main .container ul {
+    font-size: 1em;
+  }
+  .container blockquote {
+    font-size: 1em;
+    text-align: justify;
+  }
+  .container blockquote footer {
+    font-size: 0.8em;
+  }
+  a {
+    font-size: 1em;
+  }
+  #creator {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 720px) {
+  header .container h1 {
+    font-size: 1.7em;
+  }
+  header .container h2 {
+    font-size: 1em;
+  }
+  main .container h3 {
+    font-size: 1em;
+  }
+  figure figcaption {
+    font-size: 0.7em;
+  }
+ main .container ul {
+  text-align: left;
+    font-size: 0.7em;
+  }
+   main .container p {
+    font-size: 0.7em;
+  }
+  
+  .container blockquote {
+    font-size: 0.7em;
+    text-align: justify;
+  }
+  .container blockquote footer {
+    font-size: 0.6em;
+  }
+  a {
+    font-size: 0.75em;
+  }
+  #creator {
+    font-size: 0.6em;
+  }
+}
+
